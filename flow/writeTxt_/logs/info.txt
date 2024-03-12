@@ -1,5 +1,24 @@
 src_lang: mar_Deva tgt_lang: eng_Latn ai4bharat/indictrans2-indic-en-dist-200M
-55
+58
+  exec_task: pdf_cid_info 
+  exec_task: pdf_cid_reader 
+  exec_task: word_recognizer 
+  exec_task: pdftable_finder 
+	==Total:4 Errors=4 TableEmptyBodyCellError=4
+  exec_task: line_finder 
+  exec_task: para_finder 
+  exec_task: extract_order_number 
+	extract_order_number:202403121212551916.pdf: >शासन निर्णय क्रमांक< >तिक्षेवि-२०२३/प्र.क्र.३४/का.१४४४-अ<
+	elapsed_time:202403121212551916.pdf: 0.000090
+  exec_task: doc_translator_hf 
+    Paras: #33 Sentences: #33
+	[0]  #words: 58 #sentences: 15
+	After generate: 2 MB
+	[0]  #words: 260 #sentences: 37
+	After generate: 3 MB
+	[1]  #words: 45 #sentences: 2
+	After generate: 3 MB
+  exec_task: text_writer 
   exec_task: pdf_cid_info 
   exec_task: pdf_cid_reader 
   exec_task: word_recognizer 
@@ -8,31 +27,32 @@ src_lang: mar_Deva tgt_lang: eng_Latn ai4bharat/indictrans2-indic-en-dist-200M
   exec_task: line_finder 
   exec_task: para_finder 
   exec_task: extract_order_number 
-	**FirstPage: 10: संकीर्ण-२०२३/प्र.क्र.०५/का-१४१४ ==शासन निर्णय क्र. संकीर्ण- २०२३/प्र.क्र.०५/का-१४१४,
-	extract_order_number:202403111108233116.pdf: >शासन निर्णय क्र.< >संकीर्ण-२०२३/प्र.क्र.०५/का-१४१४<
-	elapsed_time:202403111108233116.pdf: 0.000803
+	extract_order_number:202403121526254416.pdf: >शासन आदेश क्रमांक< >बदली-१०२४/प्र.क्र.१६/का.१४२७<
+	elapsed_time:202403121526254416.pdf: 0.000085
   exec_task: doc_translator_hf 
-    Paras: #20 Sentences: #0
-	[0]  #words: 211 #sentences: 35
+    Paras: #33 Sentences: #9
+	[0]  #words: 31 #sentences: 5
+	After generate: 3 MB
+	[0]  #words: 258 #sentences: 35
+	After generate: 3 MB
+	[1]  #words: 13 #sentences: 1
 	After generate: 3 MB
   exec_task: text_writer 
   exec_task: pdf_cid_info 
   exec_task: pdf_cid_reader 
-	202403111611074916.pdf missing_cmaps: sakalmarathinormal
   exec_task: word_recognizer 
-	Tesseract on page: 0
-	Tesseract on page: 1
   exec_task: pdftable_finder 
 	==Total:0 Errors=0 
   exec_task: line_finder 
   exec_task: para_finder 
   exec_task: extract_order_number 
-	**FirstPage: 10: इएसटी-१०२४/प्र.क्र. २५/का.१४२७ ==शासन आदेडा क्रमांक: इएसटी-१०२४/प्र.क्र. २५/का.१४२७
-	extract_order_number:202403111611074916.pdf: >शासन आदेडा क्रमांक< >इएसटी-१०२४/प्र.क्र. २५/का.१४२७<
-	elapsed_time:202403111611074916.pdf: 0.001103
+	extract_order_number:202403121550328116.pdf: >शासन आदेश क्रमांक< >ईएसटी-१०२३/प्र.क्र.३६/का.१४२७<
+	elapsed_time:202403121550328116.pdf: 0.000082
   exec_task: doc_translator_hf 
-    Paras: #20 Sentences: #0
-	[0]  #words: 218 #sentences: 22
+    Paras: #23 Sentences: #12
+	[0]  #words: 30 #sentences: 7
+	After generate: 3 MB
+	[0]  #words: 160 #sentences: 25
 	After generate: 3 MB
   exec_task: text_writer 
-#docs: 55 #processed: 2
+#docs: 58 #processed: 3
